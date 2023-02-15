@@ -1,0 +1,169 @@
+$color_orange: #F35625;
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #e7e7e7;
+    padding: 20px 0;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+img {
+    max-width: 100%;
+}
+
+.card {
+    padding: 25px;
+    background: #fff;
+    border-radius: 8px;
+    margin-bottom: 12px;
+
+    &[data-menu='false'] {
+        .options {
+            .actions {
+                display: none;
+            }
+        }
+    }
+
+    &[data-menu='true'] {
+        .options {
+            .icon-toggle {
+                background: #EDEBEB;
+
+                img {
+                    filter: brightness(1);
+                }
+            }
+        }
+    }
+
+    header {
+        position: relative;
+        padding: 0 20px 48px 0;
+    }
+
+    .content {
+    }
+
+    .col-img {
+        display: none;
+        @media screen and (min-width: 992px) {
+            display: flex;
+        }
+    }
+
+    .options {
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        .icon-toggle {
+            border-radius: 50%;
+            width: 24px;
+            height: 24px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+
+            img {
+                height: 14px;
+                filter: brightness(.2);
+            }
+
+            &:hover {
+                background: #EDEBEB;
+
+                img {
+                    filter: brightness(1);
+                }
+            }
+        }
+
+        .actions {
+            position: absolute;
+            top: 36px;
+            right: 0;
+            border: 1px solid #EAEDF2;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, .05);
+            border-radius: 4px;
+            padding: 4px;
+            background: #fff;
+
+            > div {
+                display: flex;
+                align-items: center;
+                font-weight: 500;
+                white-space: nowrap;
+                height: 39px; // hardcoded for now
+                min-width: 170px;
+                border-radius: 6px;
+                position: relative;;
+                padding: 0 12px;
+                cursor: pointer;
+
+                img {
+                    width: 17px;
+                    margin-right: 10px;
+                    filter: brightness(.2);
+                }
+
+                // Divider
+                &:not(:last-child) {
+                    margin-bottom: 9px;
+
+                    &::after {
+                        content: '';
+                        display: block;
+                        position: absolute;
+                        bottom: -5px;
+                        left: -4px;
+                        right: -4px;
+                        height: 1px;
+                        background: #EAEDF2;
+                    }
+                }
+
+                &:hover {
+                    background: #F4F7FC;
+                    color: $color_orange;
+
+                    img {
+                        filter: brightness(1);
+                    }
+                }
+
+            }
+        }
+    }
+
+    .title {
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    .btn-wrap {
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 75px;
+    }
+
+    .button {
+        display: block;
+        line-height: 38px;
+        width: 136px;
+        text-align: center;
+        color: #fff;
+        background: $color_orange;
+        border-radius: 8px;
+        font-weight: 600;
+        font-size: 16px;
+        text-transform: capitalize;
+        cursor: pointer;
+
+        &:hover {
+            opacity: .7;
+        }
+    }
+}

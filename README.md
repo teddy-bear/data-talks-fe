@@ -1,6 +1,14 @@
-# Getting Started with Create React App
+# Data talks FE task
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Used TS for better scalability. \
+Split code into simple modules.
+Can be separated into individual components in the future.
+Each card can have its own state. \
+Applied basic functionality for the card options block.
+Click events can be optimized as well.
+Connected bootstrap grid for better responsive layout. \
+Real sizes can be applied if needed. \
+Used Poppins font per design.
 
 ## Available Scripts
 

@@ -39,5 +39,13 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "devDependencies": {
+    "node-sass": "^7.0.3",
+    "sass": "^1.58.1"
+  },
+  "author": "Mike Alexeenko",
+  "license": "ISC"
 }
